@@ -1,0 +1,52 @@
+name: bubbletea-examples
+version: 0.1.0
+
+authors:
+  - Dominic Sisneros <dsisnero@gmail.com>
+
+crystal: '>= 1.19.1'
+
+license: MIT
+
+dependencies:
+  bubbletea:
+    github: dsisnero/bubbletea.cr
+
+  # Terminal styling and colors
+  lipgloss:
+    github: dsisnero/lipgloss
+
+  # ANSI sequences and terminal handling
+  ansi:
+    github: dsisnero/ansi
+
+  # Cell wrapping and buffer management
+  cellwrap:
+    github: dsisnero/cellwrap
+
+  cancel_reader:
+    github: dsisnero/cancel_reader
+
+  colorprofile:
+    github: dsisnero/colorprofile
+
+  colorful:
+    github: dsisnero/colorful
+
+  harmonica:
+    github: dsisnero/harmonica
+
+  ultraviolet:
+    github: dsisnero/ultraviolet
+
+  # Bubble components
+  bubbles:
+    github: dsisnero/bubbles
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 1.0
+
+  golden:
+    github: dsisnero/golden

@@ -1,0 +1,10 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+/build/
+/temp/
+*.dwarf
+*.cr.bin
+.crystal
+*.out
