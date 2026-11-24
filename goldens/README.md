@@ -41,8 +41,11 @@ Go example's own `main()` builds. A few need more:
 - `autocomplete` — the upstream example fetches its repo list over HTTP, so the
   harness wraps the model and replaces only `Init` with a fixed list, matching
   the Crystal spec.
-- `cellbuffer`, `splash`, `stopwatch`, `timer` — wrap the model so `Init`
-  returns nil, mirroring the Crystal specs' subclasses.
+- `cellbuffer`, `splash`, `stopwatch`, `timer`, `textinputs` — wrap the model so
+  `Init` returns nil, mirroring the Crystal specs' subclasses. For `textinputs`
+  this also drops `textinput.Blink`: a blink tick restyles the virtual cursor
+  cell, and its phase against the renderer's frame ticks made the capture
+  depend on scheduling.
 - `table` — the spec builds its own model (5 rows, height 7, focused), so the
   harness reproduces that model in Go rather than the upstream example's.
 - `focus_blur` — builds the program inline because it needs a genuinely empty

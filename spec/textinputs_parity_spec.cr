@@ -2,10 +2,20 @@ require "./spec_helper"
 ENV["BUBBLETEA_EXAMPLE_DISABLE_MAIN"] = "1"
 require "../src/textinputs"
 
+# Init is nil so the example's textinput.Blink tick never fires: a blink tick
+# changes the virtual cursor's cell style, and its phase against the renderer's
+# frame ticks makes the capture depend on scheduling (same wrapper as
+# cellbuffer, splash, stopwatch and timer).
+private class TextinputsParityModel < TextinputsModel
+  def init : Tea::Cmd?
+    nil
+  end
+end
+
 private def capture_textinputs_output : Bytes
   output = IO::Memory.new
   program = Bubbletea.new_program(
-    TextinputsModel.new,
+    TextinputsParityModel.new,
     Tea.with_input(IO::Memory.new("")),
     Tea.with_output(output),
     Tea.without_signals,
@@ -13,22 +23,30 @@ private def capture_textinputs_output : Bytes
   )
 
   spawn do
+    # Each phase is separated by more than a frame so a burst of keys cannot
+    # coalesce into a variable number of frames.
     sleep 100.milliseconds
     program.send(Tea.key('h'))
     program.send(Tea.key('i'))
+    sleep 80.milliseconds
     program.send(Tea.key(Tea::KeyTab))
+    sleep 80.milliseconds
 
     program.send(Tea.key('a'))
     program.send(Tea.key('@'))
     program.send(Tea.key('b'))
+    sleep 80.milliseconds
     program.send(Tea.key(Tea::KeyTab))
+    sleep 80.milliseconds
 
     program.send(Tea.key('1'))
     program.send(Tea.key('2'))
+    sleep 80.milliseconds
     program.send(Tea.key('r', Tea::ModCtrl))
+    sleep 80.milliseconds
 
-    sleep 60.milliseconds
     program.send(Tea.key(Tea::KeyTab))
+    sleep 80.milliseconds
     program.send(Tea.key(Tea::KeyEnter))
   end
 
@@ -38,7 +56,7 @@ private def capture_textinputs_output : Bytes
 end
 
 describe "examples/textinputs parity" do
-  pending "matches the saved Go golden output exactly (the ported view is Go's, token for token: same cells, same styles, only 256-colour vs true-colour encoding differs. Under the capture's NoTTY profile Go's renderer trims the trailing reverse-video cursor space of each focused input, while this port paints it, so the streams differ by one cell per input row)" do
+  it "matches the saved Go golden output exactly" do
     actual = capture_textinputs_output
     expected = File.read("#{__DIR__}/golden/textinputs.go.golden").to_slice
     actual.should eq(expected)
