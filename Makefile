@@ -1,4 +1,4 @@
-.PHONY: all build clean test
+.PHONY: all build clean gifs test
 
 # Build directory
 BUILD_DIR := build
@@ -27,6 +27,10 @@ clean:
 	@rm -rf $(BUILD_DIR)
 	@echo "Cleaned $(BUILD_DIR)/"
 
+# Record the component example GIFs with VHS
+gifs:
+	@./scripts/record_gifs.sh
+
 # Run tests
 test:
 	@crystal spec
@@ -36,6 +40,7 @@ help:
 	@echo "Available targets:"
 	@echo "  make build    - Build all examples to build/ directory"
 	@echo "  make clean    - Clean build directory"
+	@echo "  make gifs     - Record example GIFs (requires vhs)"
 	@echo "  make test     - Run tests"
 	@echo "  make all      - Same as make build"
 	@echo "  make help     - Show this help"
