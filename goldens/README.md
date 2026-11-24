@@ -51,6 +51,26 @@ Go example's own `main()` builds. A few need more:
   `rand.Seed` is a no-op unless `GODEBUG=randseednop=0`, and their harness
   headers say so.
 
+## Randomness
+
+`generate.py` forces `GODEBUG=randseednop=0` on every harness run (appending to
+any `GODEBUG` already in the environment), so a harness that seeds with
+`rand.Seed(n)` produces the same bytes every time without the caller
+remembering. Both RNG goldens — `package_manager` and `list_fancy_h_a` —
+reproduce unchanged under it.
+
+Reproducible on the Go side is not the same as reproducible on the Crystal side:
+matching them requires Crystal to produce the *same stream* as Go's `math/rand`
+v1 (`rngSource`, the 607-word lagged-Fibonacci generator seeded by
+`seedrand`/MIT constants), not merely a seeded `Random`. That is the whole
+`list_fancy H->a` gap ("Go math/rand shuffle parity not yet matched in
+Crystal"), and the same requirement applies to `doom_fire` and `list_fancy`
+when they are ported, because their randomness is visible in the frame.
+
+Order of work when a ported example draws on the RNG: land a shared Go-`math/rand`
+helper in the specs (one implementation, proven against the existing
+`list_fancy_h_a` golden), then use it in the example's model.
+
 ## What is not asserted
 
 `spec/textarea_parity_spec.cr` and `spec/paginator_parity_spec.cr` capture a

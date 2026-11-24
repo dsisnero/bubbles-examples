@@ -17,6 +17,7 @@ Usage:
     python3 goldens/generate.py simple mouse views
 """
 
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -25,6 +26,20 @@ GOLDENS_DIR = Path(__file__).resolve().parent
 EXAMPLES_REPO = GOLDENS_DIR.parent
 UPSTREAM_EXAMPLES = EXAMPLES_REPO.parent / "vendor" / "bubbletea" / "examples"
 GOLDEN_DIR = EXAMPLES_REPO / "spec" / "golden"
+
+
+def go_env() -> dict[str, str]:
+    """Environment for the harness run.
+
+    Harnesses whose example draws on Go's global math/rand seed it with
+    rand.Seed, which current Go ignores unless GODEBUG=randseednop=0. Forcing it
+    here keeps RNG-driven goldens reproducible without every caller remembering.
+    """
+    env = dict(os.environ)
+    godebug = env.get("GODEBUG", "")
+    if "randseednop=" not in godebug:
+        env["GODEBUG"] = ",".join(part for part in (godebug, "randseednop=0") if part)
+    return env
 
 
 def rename_main(src: str) -> str:
@@ -73,6 +88,7 @@ def main() -> None:
             cwd=GOLDENS_DIR,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
+            env=go_env(),
         )
         if result.returncode != 0:
             raise SystemExit(
