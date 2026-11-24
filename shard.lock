@@ -2,23 +2,23 @@ version: 2.0
 shards:
   ameba:
     git: https://github.com/crystal-ameba/ameba.git
-    version: 1.6.4
+    version: 1.7.0
 
   ansi:
     git: https://github.com/dsisnero/ansi.git
-    version: 0.1.0+git.commit.4cf33c14c2ff5da0ac7ed38a2f0aa7eb4128f209
+    version: 0.1.0+git.commit.46255572373808e288c100fbab2c806f3f7b65a8
 
   baked_file_system:
     git: https://github.com/schovi/baked_file_system.git
-    version: 0.13.0+git.commit.636b800614ecbe55997fbde9650c5866e1f5b438
+    version: 0.14.1+git.commit.559a49ab2a7242f60bfd0e939f6b0c70b96b575a
 
   bubbles:
     git: https://github.com/dsisnero/bubbles.git
-    version: 0.1.0+git.commit.bbad529e7584cd046cc18806ef84ccff62ba86d2
+    version: 2.1.2
 
   bubbletea:
     git: https://github.com/dsisnero/bubbletea.cr.git
-    version: 0.1.0+git.commit.f2cc0315a3365e53bd9c8bbed08d681133537772
+    version: 0.1.0+git.commit.9023aae8cc799e8a832f8309c8850b696a831afc
 
   cancel_reader:
     git: https://github.com/dsisnero/cancel_reader.git
@@ -34,19 +34,19 @@ shards:
 
   colorprofile:
     git: https://github.com/dsisnero/colorprofile.git
-    version: 0.1.0+git.commit.c689a6d8a71c5d8fb3b863a1eb6dc10e7fa0f931
+    version: 0.1.1
 
   crimage:
     git: https://github.com/naqvis/crimage.git
-    version: 1.0.4+git.commit.b65f67df27f4cb8807a34d94a90dfd4162acf45a
+    version: 1.0.5+git.commit.7d3244a3850646e3d398cef071f7c3e3f52c7518
 
   easyclip:
     git: https://github.com/kojix2/easyclip.git
-    version: 0.1.2
+    version: 0.2.0
 
   golden:
     git: https://github.com/dsisnero/golden.git
-    version: 0.1.0+git.commit.82c92f031cbd48f150d8c76d321b5f9211d6d440
+    version: 0.3.0
 
   harmonica:
     git: https://github.com/dsisnero/harmonica.git
@@ -54,11 +54,11 @@ shards:
 
   lipgloss:
     git: https://github.com/dsisnero/lipgloss.git
-    version: 2.0.0
+    version: 2.0.4
 
   mosaic:
     git: https://github.com/dsisnero/mosaic.git
-    version: 0.1.0+git.commit.afef1373e37de29845d762daf31b12f93c05f153
+    version: 0.1.0+git.commit.efe05c232d6da4cf24ccceafa5b26a01314bfa94
 
   nucleoc:
     git: https://github.com/dsisnero/nucleoc.git
@@ -76,13 +76,9 @@ shards:
     git: https://github.com/stumpycr/stumpy_png.git
     version: 5.0.1
 
-  teatest:
-    git: https://github.com/dsisnero/teatest.git
-    version: 0.1.0+git.commit.f3cc054f7ff46ba1e9628e8ddab626c77f2f3843
-
   terminfo:
-    git: https://github.com/docelic/terminfo.git
-    version: 0.8.1
+    git: https://github.com/dsisnero/terminfo.git
+    version: 0.8.2
 
   textseg:
     git: https://github.com/naqvis/uni_text_seg.git
@@ -90,7 +86,7 @@ shards:
 
   ultraviolet:
     git: https://github.com/dsisnero/ultraviolet.git
-    version: 0.1.0+git.commit.2b0b22bbf8153e3c12b4250623fba058ed9e4e5d
+    version: 1.1.4
 
   uniwidth:
     git: https://github.com/naqvis/uni_char_width.git
