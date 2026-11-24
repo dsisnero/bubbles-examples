@@ -8,3 +8,4 @@
 *.cr.bin
 .crystal
 *.out
+/.crystal-cache/
