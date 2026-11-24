@@ -23,4 +23,4 @@ end
 _model, err = program.run
 raise err.not_nil! if err
 
-File.open(out_path, "wb") { |f| f.write(output.to_slice) }
+File.open(out_path, "wb", &.write(output.to_slice))

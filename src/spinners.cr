@@ -13,9 +13,9 @@ SPINNERS_LIST = [
   Bubbles::Spinner::Monkey,
 ]
 
-SPINNERS_TEXT_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("252"))
+SPINNERS_TEXT_STYLE    = Lipgloss::Style.new.foreground(Lipgloss.color("252"))
 SPINNERS_SPINNER_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("69"))
-SPINNERS_HELP_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("241"))
+SPINNERS_HELP_STYLE    = Lipgloss::Style.new.foreground(Lipgloss.color("241"))
 
 class SpinnersModel
   include Bubbletea::Model

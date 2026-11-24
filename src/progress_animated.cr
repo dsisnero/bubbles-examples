@@ -2,8 +2,8 @@ require "bubbletea"
 require "bubbles"
 require "lipgloss"
 
-PROGRESS_ANIM_PADDING   = 2
-PROGRESS_ANIM_MAX_WIDTH = 80
+PROGRESS_ANIM_PADDING    =  2
+PROGRESS_ANIM_MAX_WIDTH  = 80
 PROGRESS_ANIM_HELP_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("#626262"))
 
 struct ProgressAnimatedTickMsg

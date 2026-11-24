@@ -1,7 +1,7 @@
 require "./spec_helper"
 require "bubbles"
 
-private CHOICE_STYLE = Lipgloss::Style.new.padding_left(1).foreground(Lipgloss.color("241"))
+private CHOICE_STYLE    = Lipgloss::Style.new.padding_left(1).foreground(Lipgloss.color("241"))
 private SAVE_TEXT_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("170"))
 private QUIT_VIEW_STYLE = Lipgloss::Style.new.padding(1, 3).border(Lipgloss.rounded_border).border_foreground(Lipgloss.color("170"))
 

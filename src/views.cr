@@ -2,19 +2,19 @@ require "bubbletea"
 require "lipgloss"
 require "colorful"
 
-VIEWS_PROGRESS_BAR_WIDTH = 71
-VIEWS_PROGRESS_FULL_CHAR = "█"
+VIEWS_PROGRESS_BAR_WIDTH  = 71
+VIEWS_PROGRESS_FULL_CHAR  = "█"
 VIEWS_PROGRESS_EMPTY_CHAR = "░"
-VIEWS_DOT_CHAR = " • "
+VIEWS_DOT_CHAR            = " • "
 
-VIEWS_KEYWORD_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("211"))
-VIEWS_SUBTLE_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("241"))
-VIEWS_TICKS_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("79"))
+VIEWS_KEYWORD_STYLE  = Lipgloss::Style.new.foreground(Lipgloss.color("211"))
+VIEWS_SUBTLE_STYLE   = Lipgloss::Style.new.foreground(Lipgloss.color("241"))
+VIEWS_TICKS_STYLE    = Lipgloss::Style.new.foreground(Lipgloss.color("79"))
 VIEWS_CHECKBOX_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("212"))
 VIEWS_PROGRESS_EMPTY = VIEWS_SUBTLE_STYLE.render(VIEWS_PROGRESS_EMPTY_CHAR)
-VIEWS_DOT_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("236")).render(VIEWS_DOT_CHAR)
-VIEWS_MAIN_STYLE = Lipgloss::Style.new.margin_left(2)
-VIEWS_RAMP = begin
+VIEWS_DOT_STYLE      = Lipgloss::Style.new.foreground(Lipgloss.color("236")).render(VIEWS_DOT_CHAR)
+VIEWS_MAIN_STYLE     = Lipgloss::Style.new.margin_left(2)
+VIEWS_RAMP           = begin
   styles = [] of Lipgloss::Style
   color_a = Colorful::Color.hex("#B14FFF")
   color_b = Colorful::Color.hex("#00FFA3")
@@ -179,9 +179,9 @@ class ViewsModel
     end
 
     "What to do today?\n\n#{choices}\n\nProgram quits in #{VIEWS_TICKS_STYLE.render(@ticks.to_s)} seconds\n\n" \
-      "#{VIEWS_SUBTLE_STYLE.render("j/k, up/down: select")}#{VIEWS_DOT_STYLE}" \
-      "#{VIEWS_SUBTLE_STYLE.render("enter: choose")}#{VIEWS_DOT_STYLE}" \
-      "#{VIEWS_SUBTLE_STYLE.render("q, esc: quit")}"
+    "#{VIEWS_SUBTLE_STYLE.render("j/k, up/down: select")}#{VIEWS_DOT_STYLE}" \
+    "#{VIEWS_SUBTLE_STYLE.render("enter: choose")}#{VIEWS_DOT_STYLE}" \
+    "#{VIEWS_SUBTLE_STYLE.render("q, esc: quit")}"
   end
 
   private def chosen_view : String

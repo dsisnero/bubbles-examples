@@ -10,8 +10,8 @@ struct InstalledPkgMsg
 end
 
 PACKAGE_MANAGER_CURRENT_PKG_STYLE = Lipgloss::Style.new.foreground("211")
-PACKAGE_MANAGER_DONE_STYLE = Lipgloss::Style.new.margin(1, 2)
-PACKAGE_MANAGER_CHECKMARK = "\e[38;5;42m✓\e[m"
+PACKAGE_MANAGER_DONE_STYLE        = Lipgloss::Style.new.margin(1, 2)
+PACKAGE_MANAGER_CHECKMARK         = "\e[38;5;42m✓\e[m"
 
 PACKAGE_MANAGER_PACKAGES = [
   "vegeutils",

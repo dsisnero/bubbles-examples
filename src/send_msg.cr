@@ -3,14 +3,14 @@ require "bubbles"
 require "lipgloss"
 
 SEND_MSG_SPINNER_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("63"))
-SEND_MSG_HELP_STYLE = Lipgloss::Style.new.foreground(Lipgloss.color("241")).margin(1, 0)
-SEND_MSG_DOT_STYLE = begin
+SEND_MSG_HELP_STYLE    = Lipgloss::Style.new.foreground(Lipgloss.color("241")).margin(1, 0)
+SEND_MSG_DOT_STYLE     = begin
   s = SEND_MSG_HELP_STYLE.dup
   s.unset_margins
   s
 end
 SEND_MSG_DURATION_STYLE = SEND_MSG_DOT_STYLE
-SEND_MSG_APP_STYLE = Lipgloss::Style.new.margin(1, 2, 0, 2)
+SEND_MSG_APP_STYLE      = Lipgloss::Style.new.margin(1, 2, 0, 2)
 
 class SendMsgResult
   include Tea::Msg

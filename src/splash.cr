@@ -126,7 +126,7 @@ class SplashModel
   private def interpolate_colors(
     c1 : Tuple(Int32, Int32, Int32),
     c2 : Tuple(Int32, Int32, Int32),
-    t : Float64
+    t : Float64,
   ) : Tuple(Int32, Int32, Int32)
     r = (c1[0].to_f * (1.0 - t) + c2[0].to_f * t).to_i
     g = (c1[1].to_f * (1.0 - t) + c2[1].to_f * t).to_i

@@ -3,7 +3,7 @@ require "http/client"
 require "option_parser"
 require "uri"
 
-PADDING = 2
+PADDING   =  2
 MAX_WIDTH = 80
 
 PROGRESS_DOWNLOAD_HELP_STYLE = Lipgloss::Style.new.foreground("#626262")
@@ -110,8 +110,8 @@ class ProgressDownloadModel
 
     pad = " " * PADDING
     Bubbletea::View.new("\n" +
-      pad + @progress.view + "\n\n" +
-      pad + PROGRESS_DOWNLOAD_HELP_STYLE.render("Press any key to quit"))
+                        pad + @progress.view + "\n\n" +
+                        pad + PROGRESS_DOWNLOAD_HELP_STYLE.render("Press any key to quit"))
   end
 
   private def final_pause : Bubbletea::Cmd

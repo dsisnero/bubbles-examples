@@ -2,7 +2,7 @@ require "./spec_helper"
 require "bubbles"
 require "lipgloss"
 
-private PADDING_PROGRESS_STATIC   = 2
+private PADDING_PROGRESS_STATIC   =  2
 private MAX_WIDTH_PROGRESS_STATIC = 80
 
 private struct ProgressStaticTickMsg

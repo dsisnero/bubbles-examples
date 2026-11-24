@@ -66,7 +66,7 @@ class SpaceModel
       io << '\n' if y < visible_height - 1
     end
 
-    Bubbletea::View.new([title, io.to_s].join("\n")).tap { |v| v.alt_screen = true }
+    Bubbletea::View.new([title, io.to_s].join("\n")).tap(&.alt_screen=(true))
   end
 
   private def setup_colors
