@@ -32,7 +32,7 @@ private def capture_dynamic_textarea_output : Bytes
 end
 
 describe "examples/dynamic_textarea parity" do
-  pending "matches the saved Go golden output exactly (Go skips unchanged gutter cells with `CSI 2 C` where this renderer rewrites them; the visible frame is identical)" do
+  it "matches the saved Go golden output exactly" do
     actual = capture_dynamic_textarea_output
     expected = File.read("#{__DIR__}/golden/dynamic_textarea.go.golden").to_slice
     actual.should eq(expected)

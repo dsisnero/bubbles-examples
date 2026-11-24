@@ -34,3 +34,5 @@ require (
 
 // The harnesses must run against the same Go sources this repository pins.
 replace charm.land/bubbletea/v2 => ../../vendor/bubbletea
+
+replace charm.land/bubbles/v2 => ../../vendor/bubbles

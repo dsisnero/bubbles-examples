@@ -42,6 +42,8 @@ dependencies:
   # Bubble components
   bubbles:
     github: dsisnero/bubbles
+    # v2.1.2 predates the textarea prompt-style fix on main (c933ae5).
+    commit: c933ae5
 
 development_dependencies:
   ameba:

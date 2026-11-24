@@ -16,7 +16,7 @@ import (
 )
 
 func goldenModel() tea.Model {
-	content, err := os.ReadFile("pager/artichoke.md")
+	content, err := os.ReadFile("../../vendor/bubbletea/examples/pager/artichoke.md")
 	if err != nil {
 		panic(err)
 	}
