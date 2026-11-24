@@ -1,4 +1,4 @@
-[?2026$p[?2027$p[?25l[?2004h[>4;2m[=1;1u[?u[J
+[?2026$p[?2027$p[?25l[?2004h[>4;2m[>1u[?u[J
   What to do today?
 
   [x] Plant carrots
@@ -8,9 +8,8 @@
 
   Program quits in 10 seconds
 
-  j/k, up/down: select • enter: choose • q, esc: quit
-[8A  [ ] Plant carrots
+  j/k, up/down: select • enter: choose • q, esc: quit[7A  [ ] Plant carrots
   [x] Go to the market[4A[J
-  See you later![>4m[=0;1u
+  See you later!
 
-[J[?25h[?2004l
+[>4m[<1u[J[?25h[?2004l

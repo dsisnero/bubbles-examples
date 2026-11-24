@@ -1,4 +1,4 @@
-[?2026$p[?2027$p[>4m[=0;1u[?1049h[?25l[?2004h[>4;2m[=1;1u[?u[H[2J
+[?2026$p[?2027$p[>4m[?1049h[?25l[?2004h[>4;2m[>1u[?u[H[2J
 [5G My Fave Things [4;5H23 items
 
   │ Raspberry Pi’s
@@ -60,5 +60,4 @@
 [K[2;17Hx [6;9Hx[2;5H My Fave Things [4;5H“linux” 1 item • 22 filtered
 
   │ Linux
-  │ Pretty much the best OS[23;5H↑/k up • ↓/j down • / filter • esc clear filter • q quit • ? more[>4m[=0;1u
-[?1049l[?25h[?2004l
+  │ Pretty much the best OS[23;5H↑/k up • ↓/j down • / filter • esc clear filter • q quit • ? more[>4m[<1u[24;1H[?1049l[?25h[?2004l

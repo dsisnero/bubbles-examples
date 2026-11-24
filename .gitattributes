@@ -1,0 +1,3 @@
+# Golden captures are byte-exact fixtures: never let Git normalise their line
+# endings (they contain raw CR/LF from the terminal streams).
+spec/golden/*.golden -text

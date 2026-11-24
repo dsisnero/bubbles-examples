@@ -1,4 +1,16 @@
-[?2026$p[?2027$p[?25l[?2004h[>4;2m[=1;1u[?u[JChoose a terminal-wide color to set. All
+[?2026$p[?2027$p[?25l[?2004h[>4;2m[>1u[?u[JChoose a terminal-wide color to set. All
+settings will be cleared on exit.
+
+ > Foreground
+   Background
+   Cursor
+
+Press q to quit, j/k to move, and enter to select[1 q[7A[JEnter a color in hex format:
+
+> #ff00ff[14X
+
+Press q to quit, and enter to submit, esc to go back
+[3A[2C[?25h[?25l#6b50ff[K[?25h[?25l]10;#6b50ff[0 q[2A[JChoose a terminal-wide color to set. All
 settings will be cleared on exit.
 
  > Foreground
@@ -6,41 +18,33 @@ settings will be cleared on exit.
    Cursor
 
 Press q to quit, j/k to move, and enter to select
-[1 q[8A[JEnter a color in hex format:
-
-> #ff00ff[14X
-
-Press q to quit, and enter to submit, esc to go back[2A[50D[?25h[?25l#6b50ff[C[K[D[?25h[?25l]10;#6b50ff[0 q[2A[J[7B[J[7AChoose a terminal-wide color to set. All
-settings will be cleared on exit.
-
- > Foreground
-   Background
-   Cursor
-
-Press q to quit, j/k to move, and enter to select[4A   
+[5A   
  > [1 q[4A[JEnter a color in hex format:
 
 > #ff00ff[14X
 
-Press q to quit, and enter to submit, esc to go back[2A[50D[?25h[?25l#00ff00[C[K[D[?25h[?25l]11;#00ff00[0 q[2A[J[7B[J[7AChoose a terminal-wide color to set. All
+Press q to quit, and enter to submit, esc to go back
+[3A[2C[?25h[?25l#00ff00[K[?25h[?25l]11;#00ff00[0 q[2A[JChoose a terminal-wide color to set. All
 settings will be cleared on exit.
 
  > Foreground
    Background
    Cursor
 
-Press q to quit, j/k to move, and enter to select[4A   
+Press q to quit, j/k to move, and enter to select
+[5A   
  >    
  > [1 q[5A[JEnter a color in hex format:
 
 > #ff00ff[14X
 
-Press q to quit, and enter to submit, esc to go back[2A[50D[?25h[?25l#808080[C[K[D[?25h[?25l[0 q[2A[J[7B[J[7AChoose a terminal-wide color to set. All
+Press q to quit, and enter to submit, esc to go back
+[3A[2C[?25h[?25l#808080[K[?25h[?25l[0 q[2A[JChoose a terminal-wide color to set. All
 settings will be cleared on exit.
 
  > Foreground
    Background
    Cursor
 
-Press q to quit, j/k to move, and enter to select[>4m[=0;1u
-[J[?25h[?2004l]111]110
+Press q to quit, j/k to move, and enter to select
+[>4m[<1u[J[?25h[?2004l]111]110

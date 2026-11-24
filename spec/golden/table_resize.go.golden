@@ -1,24 +1,42 @@
-[?2026$p[?2027$p[>4m[=0;1u[?1049h[?25l[?2004h[>4;2m[=1;1u[?u[H[2J
+[?1049h[?25l[?2004h[H[2J
 ┏━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
 ┃ #          ┃ NAME       ┃ TYPE 1    ┃ TYPE 2    ┃ JAPANESE   ┃ OFFICIAL ROM. ┃
-┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫
-┃ 1          ┃ Bulbasaur  ┃ Grass     ┃ Poison    ┃ フシギダネ ┃ Bulbasaur     ┃
-┃ 2          ┃ Ivysaur    ┃ Grass     ┃ Poison    ┃ フシギソウ ┃ Ivysaur       ┃
-┃ 3          ┃ Venusaur   ┃ Grass     ┃ Poison    ┃ フシギバナ ┃ Venusaur      ┃
-┃ 4          ┃ Charmander ┃ Fire      ┃           ┃ ヒトカゲ   ┃ Hitokage      ┃
-┃ 5          ┃ Charmeleon ┃ Fire      ┃           ┃ リザード   ┃ Lizardo       ┃
-┃ 6          ┃ Charizard  ┃ Fire      ┃ Flying    ┃ リザードン ┃ Lizardon      ┃
-┃ 7          ┃ Squirtle   ┃ Water     ┃           ┃ ゼニガメ   ┃ Zenigame      ┃
-┃ 8          ┃ Wartortle  ┃ Water     ┃           ┃ カメール   ┃ Kameil        ┃
-┃ 9          ┃ Blastoise  ┃ Water     ┃           ┃ カメックス ┃ Kamex         ┃
-┃ 10         ┃ Caterpie   ┃ Bug       ┃           ┃ キャタピー ┃ Caterpie      ┃
-┃ 11         ┃ Metapod    ┃ Bug       ┃           ┃ トランセル ┃ Trancell      ┃
-┃ 12         ┃ Butterfree ┃ Bug       ┃ Flying    ┃ バタフリー ┃ Butterfree    ┃
-┃ 13         ┃ Weedle     ┃ Bug       ┃ Poison    ┃ ビードル   ┃ Beedle        ┃
-┃ 14         ┃ Kakuna     ┃ Bug       ┃ Poison    ┃ コクーン   ┃ Cocoon        ┃
-┃ 15         ┃ Beedrill   ┃ Bug       ┃ Poison    ┃ スピアー   ┃ Spear         ┃
-┃ 16         ┃ Pidgey     ┃ Normal    ┃ Flying    ┃ ポッポ     ┃ Poppo         ┃
-┃ 17         ┃ Pidgeotto  ┃ Normal    ┃ Flying    ┃ ピジョン   ┃ Pigeon        ┃
-┃ 18         ┃ Pidgeot    ┃ Normal    ┃ Flying    ┃ ピジョット ┃ Pigeot        ┃
-┃ 19         ┃ Rattata    ┃ Normal    ┃           ┃ コラッタ   ┃ Koratta       ┃
-┃ …          ┃ …          ┃ …         ┃ …         ┃ …          ┃ …             [?7l┃[?7h[>4m[=0;1u[?1049l[?25h[?2004l
+┣━━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━━╋━━━━━━━━━━━━━━━┫[?7l
+[K┃ 1          ┃ Bulbasaur  ┃ Grass     ┃ Poison    ┃ フシギダネ ┃ Bulbasaur     ┃[?7h[5;80H[?7l
+[K┃ 2          ┃ Ivysaur    ┃ Grass     ┃ Poison    ┃ フシギソウ ┃ Ivysaur       ┃[?7h[6;80H[?7l
+[K┃ 3          ┃ Venusaur   ┃ Grass     ┃ Poison    ┃ フシギバナ ┃ Venusaur      ┃[?7h[7;80H[?7l
+[K┃ 4          ┃ Charmander ┃ Fire      ┃           ┃ ヒトカゲ   ┃ Hitokage      ┃[?7h[8;80H[?7l
+[K┃ 5          ┃ Charmeleon ┃ Fire      ┃           ┃ リザード   ┃ Lizardo       ┃[?7h[9;80H[?7l
+[K┃ 6          ┃ Charizard  ┃ Fire      ┃ Flying    ┃ リザードン ┃ Lizardon      ┃[?7h[10;80H[?7l
+[K┃ 7          ┃ Squirtle   ┃ Water     ┃           ┃ ゼニガメ   ┃ Zenigame      ┃[?7h[11;80H[?7l
+[K┃ 8          ┃ Wartortle  ┃ Water     ┃           ┃ カメール   ┃ Kameil        ┃[?7h[12;80H[?7l
+[K┃ 9          ┃ Blastoise  ┃ Water     ┃           ┃ カメックス ┃ Kamex         ┃[?7h[13;80H[?7l
+[K┃ 10         ┃ Caterpie   ┃ Bug       ┃           ┃ キャタピー ┃ Caterpie      ┃[?7h[14;80H[?7l
+[K┃ 11         ┃ Metapod    ┃ Bug       ┃           ┃ トランセル ┃ Trancell      ┃[?7h[15;80H[?7l
+[K┃ 12         ┃ Butterfree ┃ Bug       ┃ Flying    ┃ バタフリー ┃ Butterfree    ┃[?7h[16;80H[?7l
+[K┃ 13         ┃ Weedle     ┃ Bug       ┃ Poison    ┃ ビードル   ┃ Beedle        ┃[?7h[17;80H[?7l
+[K┃ 14         ┃ Kakuna     ┃ Bug       ┃ Poison    ┃ コクーン   ┃ Cocoon        ┃[?7h[18;80H[?7l
+[K┃ 15         ┃ Beedrill   ┃ Bug       ┃ Poison    ┃ スピアー   ┃ Spear         ┃[?7h[19;80H[?7l
+[K┃ 16         ┃ Pidgey     ┃ Normal    ┃ Flying    ┃ ポッポ     ┃ Poppo         ┃[?7h[20;80H[?7l
+[K┃ 17         ┃ Pidgeotto  ┃ Normal    ┃ Flying    ┃ ピジョン   ┃ Pigeon        ┃[?7h[21;80H[?7l
+[K┃ 18         ┃ Pidgeot    ┃ Normal    ┃ Flying    ┃ ピジョット ┃ Pigeot        ┃[?7h[22;80H[?7l
+[K┃ 19         ┃ Rattata    ┃ Normal    ┃           ┃ コラッタ   ┃ Koratta       ┃[?7h[23;80H
+┃ …          ┃ …          ┃ …         ┃ …         ┃ …          ┃ …             [?7l┃[?7h[?7l[5d[K┃ 1          ┃ Bulbasaur  ┃ Grass     ┃ Poison    ┃ フシギダネ ┃ Bulbasaur     ┃[?7h[5;80H[?7l
+[K┃ 2          ┃ Ivysaur    ┃ Grass     ┃ Poison    ┃ フシギソウ ┃ Ivysaur       ┃[?7h[6;80H[?7l
+[K┃ 3          ┃ Venusaur   ┃ Grass     ┃ Poison    ┃ フシギバナ ┃ Venusaur      ┃[?7h[7;80H[?7l
+[K┃ 4          ┃ Charmander ┃ Fire      ┃           ┃ ヒトカゲ   ┃ Hitokage      ┃[?7h[8;80H[?7l
+[K┃ 5          ┃ Charmeleon ┃ Fire      ┃           ┃ リザード   ┃ Lizardo       ┃[?7h[9;80H[?7l
+[K┃ 6          ┃ Charizard  ┃ Fire      ┃ Flying    ┃ リザードン ┃ Lizardon      ┃[?7h[10;80H[?7l
+[K┃ 7          ┃ Squirtle   ┃ Water     ┃           ┃ ゼニガメ   ┃ Zenigame      ┃[?7h[11;80H[?7l
+[K┃ 8          ┃ Wartortle  ┃ Water     ┃           ┃ カメール   ┃ Kameil        ┃[?7h[12;80H[?7l
+[K┃ 9          ┃ Blastoise  ┃ Water     ┃           ┃ カメックス ┃ Kamex         ┃[?7h[13;80H[?7l
+[K┃ 10         ┃ Caterpie   ┃ Bug       ┃           ┃ キャタピー ┃ Caterpie      ┃[?7h[14;80H[?7l
+[K┃ 11         ┃ Metapod    ┃ Bug       ┃           ┃ トランセル ┃ Trancell      ┃[?7h[15;80H[?7l
+[K┃ 12         ┃ Butterfree ┃ Bug       ┃ Flying    ┃ バタフリー ┃ Butterfree    ┃[?7h[16;80H[?7l
+[K┃ 13         ┃ Weedle     ┃ Bug       ┃ Poison    ┃ ビードル   ┃ Beedle        ┃[?7h[17;80H[?7l
+[K┃ 14         ┃ Kakuna     ┃ Bug       ┃ Poison    ┃ コクーン   ┃ Cocoon        ┃[?7h[18;80H[?7l
+[K┃ 15         ┃ Beedrill   ┃ Bug       ┃ Poison    ┃ スピアー   ┃ Spear         ┃[?7h[19;80H[?7l
+[K┃ 16         ┃ Pidgey     ┃ Normal    ┃ Flying    ┃ ポッポ     ┃ Poppo         ┃[?7h[20;80H[?7l
+[K┃ 17         ┃ Pidgeotto  ┃ Normal    ┃ Flying    ┃ ピジョン   ┃ Pigeon        ┃[?7h[21;80H[?7l
+[K┃ 18         ┃ Pidgeot    ┃ Normal    ┃ Flying    ┃ ピジョット ┃ Pigeot        ┃[?7h[22;80H[?7l
+[K┃ 19         ┃ Rattata    ┃ Normal    ┃           ┃ コラッタ   ┃ Koratta       ┃[?7h[23;80H[24;1H[?1049l[?25h[?2004l

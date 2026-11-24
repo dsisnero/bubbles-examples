@@ -7,7 +7,7 @@ describe "examples/pipe no-input parity" do
     status = File.open("/dev/null") do |dev_null|
       Process.run(
         "crystal",
-        ["run", "examples/pipe.cr"],
+        ["run", "src/pipe.cr"],
         input: dev_null,
         output: output,
         error: Process::Redirect::Close,
