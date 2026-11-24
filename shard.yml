@@ -42,8 +42,9 @@ dependencies:
   # Bubble components
   bubbles:
     github: dsisnero/bubbles
-    # v2.1.2 predates the textarea prompt-style fix on main (c933ae5).
-    commit: c933ae5
+    # Release tag matches upstream charmbracelet/bubbles and includes the
+    # viewport highlight and textarea/textinput fixes.
+    tag: v2.2.2
 
 development_dependencies:
   ameba:
