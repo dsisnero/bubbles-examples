@@ -1,0 +1,11 @@
+[?2026$p[?2027$p]7501;?[?25l[?2004h[>4;2m[>1u[?u]7501;state=idle:app=program-status-example:msg=V2FpdGluZyBmb3IgaW5zdHJ1Y3Rpb25z[JProgram Status Protocol (OSC 7501): no reply yet (unsupported, or behind tmux)
+
+State: idle
+Message: Waiting for instructions
+
+Press left/right to change state, q to quit.]7501;state=working:progress=0:app=program-status-example:msg=QnVpbGRpbmcgdGhlIHByb2plY3Q=[3A[37Dworking
+[9CBuilding the project[K]7501;state=working:progress=5:app=program-status-example:msg=QnVpbGRpbmcgdGhlIHByb2plY3Q=]7501;state=working:progress=10:app=program-status-example:msg=QnVpbGRpbmcgdGhlIHByb2plY3Q=]7501;state=idle:app=program-status-example:msg=V2FpdGluZyBmb3IgaW5zdHJ1Y3Rpb25zM[22Didle[K
+[9CWaiting for instructions[>4m[<1u
+
+
+[J[?25h[?2004l
